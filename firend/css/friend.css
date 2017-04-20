@@ -1,0 +1,180 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+a:active{
+	text-decoration: none;
+}
+.clearfix:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.banner{
+	height: 210px;
+	width: 100%;
+	background: url(../img/20Y58PICqzS_1024.jpg);
+	background-size: 100%;
+	position: relative;
+}
+.banner img{
+	height: 48px;
+	width: 48px;
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+	border-radius: 4px;
+	
+}
+.content{
+	margin-top: 16px;
+}
+.content .item{
+	padding: 0px 16px;
+	margin-top: 16px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid gainsboro;
+}
+.item-left, .item-right{
+	float: left;
+}
+.item-left{
+	 margin-right:-40px;
+}
+.item-left img{
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+}
+.item-right{
+	margin-left: 8px;
+    width:100%;
+}
+.item-right .item-right-box{
+	margin-left:40px;
+}
+.item-right .nikename{
+    width:100%;
+	font-size: 15px;
+	font-weight: bold;
+	color: #41454d;
+}
+.item-right .title{
+    width:100%;
+	font-size: 14px;
+	color: #41454d;
+	margin-top: 2px;
+	background: #fff0f0;
+}
+.item-right .link{
+	display: block;
+	margin-top: 8px;
+	background: #f7f7f7;
+	height: 52px;
+}
+.item-right .link img{
+	width: 40px;
+	height: 40px;
+	margin: 6px;
+	vertical-align: middle;
+}
+.item-right .link span{
+	font-size: 13px;
+	color: #41454D;
+	vertical-align: middle;
+}
+.like-comment{
+	margin-top: 12px;
+}
+.like-comment img{
+	width: 17px;
+	height: 17px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.like-comment span{
+	display: inline-block;
+	margin-left: 4px;
+	font-size: 12px;
+	color: #80858c;
+	width: 54px;
+	vertical-align: middle;
+}
+.item-right .comment-date{
+	margin-top: 12px;
+	color: #acb1b7;
+	font-size: 12px;
+}
+.item-right .comment-inf{
+	margin-top: 8px;
+	font-size: 14px;
+	color: #41454D;
+	cursor: pointer;
+}
+.item-right .comment-inf span{
+	color: #5bafff;
+	font-size: 14px;
+}
+.item-right .check-comment{
+	margin-top: 8px;
+	font-size: 12px;
+	color: #ACB1B7;
+	vertical-align: middle;
+}
+.item-right .check-comment em{
+	display: inline-block;
+	height: 7px;
+	width: 7px;
+	border-left: 2px solid #ACB1B7;
+	border-top: 2px solid #ACB1B7;
+	position: relative;
+	left: 8px;
+}
+.item-right .check-comment .icon-down{
+	transform: rotateZ(-135deg);
+	top: -4px;
+}
+.item-right .check-comment .icon-up{
+	transform: rotateZ(45deg);
+	top: 0px;
+}
+
+.album{
+	margin-top: 8px;
+}
+.album img{
+	width: 172px;
+	height: 172px;
+}
+.album4 img{
+	width: 134px;
+	height: 134px;
+	margin-bottom: 8px;
+	margin-right: 4px;
+}
+.album7 img{
+	width: 88px;
+	height: 88px;
+	margin-right: 4px;
+	margin-bottom: 8px;
+}
+footer{
+	text-align: center;
+	font-size: 12px;
+	color: #ACB1B7;
+	margin-top: 12px;
+	margin-bottom: 16px;
+}
+
+
+
+
+
+
+
+
+
+

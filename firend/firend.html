@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>朋友圈</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/friend.css"/>
+	</head>
+	<body>
+		<div class="container" ng-app="myapp" ng-controller="myctr">
+			<div class="row">
+				<div class="banner">
+					<img src="img/dabai.jpg"/>
+				</div>
+				<div class="content">
+					<div class="item clearfix" ng-show="showItem">
+						<div class="item-left">
+							<img src="img/dabai.jpg"/>
+						</div>
+						<div class="item-right">
+                           	<div class="item-right-box">
+                                <div class="nikename">
+                                  	  凌度
+                                </div>
+                                <div class="title">
+                                   	 滴滴出行，出行无忧。
+                                </div>
+                                <a href="#" class="link">
+                                    <img src="img/dabai.jpg"/>
+                                    <span>滴滴出行，从此出行再无忧。</span>
+                                </a>
+                                <div class="like-comment">
+                                    <img class="like-btn" src="img/Like-50.png"/><span class="like-num">9</span>
+                                    <img src="img/Comments-50.png"/><span>评论</span>
+                                    <img class="delet-btn" ng-click="deletInf()" src="img/Delete-50.png"/><span>删除</span>
+                                </div>
+                                <div class="comment-date">
+                                    13小时前
+                                </div>
+                                <div class="comment-inf" ng-init="allInf" ng-repeat="x in allInf">
+                                    <span>{{x.name}}</span>:{{x.title}}
+                                </div>
+                                <div class="check-comment" ng-show="showAll" ng-click="seeAll()">
+                                                                                                            查看全部10条评论<em class="icon-down"></em>
+                                </div>
+                                <div class="check-comment" ng-show="hideAll" ng-click="seeDefault()">
+                                   	 收起<em class="icon-up"></em>
+                                </div>
+                            </div>
+						</div>
+					</div>
+					
+					<div class="item clearfix">
+						<div class="item-left">
+							<img src="img/dabai.jpg"/>
+						</div>
+						<div class="item-right">
+                           	<div class="item-right-box">
+                                <div class="nikename">
+                                  	 一张
+                                </div>
+                                <div class="title">
+                                   	 滴滴出行，出行无忧。
+                                </div>
+                                <div class="album">
+                                	<img src="img/pen.jpg"/>
+                                </div>
+                                <div class="like-comment">
+                                    <img class="like-btn" src="img/Like-50.png"/><span class="like-num">9</span>
+                                    <img src="img/Comments-50.png"/><span>评论</span>
+                                </div>
+                                <div class="comment-date">
+                                    13小时前
+                                </div>
+                            </div>
+						</div>
+					</div>
+					
+					<div class="item clearfix">
+						<div class="item-left">
+							<img src="img/dabai.jpg"/>
+						</div>
+						<div class="item-right">
+                           	<div class="item-right-box">
+                                <div class="nikename">
+                                  	 四张
+                                </div>
+                                <div class="title">
+                                   	 滴滴出行，出行无忧。
+                                </div>
+                                <div class="album album4">
+                                	<img src="img/pen.jpg"/>
+                                	<img src="img/pen.jpg"/>
+                                	<img src="img/pen.jpg"/>
+                                	<img src="img/pen.jpg"/>
+                                </div>
+                                <div class="like-comment">
+                                    <img class="like-btn" src="img/Like-50.png"/><span class="like-num">9</span>
+                                    <img src="img/Comments-50.png"/><span>评论</span>
+                                </div>
+                                <div class="comment-date">
+                                    13小时前
+                                </div>
+                            </div>
+						</div>
+					</div>
+					
+					<div class="item clearfix">
+						<div class="item-left">
+							<img src="img/dabai.jpg"/>
+						</div>
+						<div class="item-right">
+                           	<div class="item-right-box">
+                                <div class="nikename">
+                                  	七张
+                                </div>
+                                <div class="title">
+                                   	 滴滴出行，出行无忧。
+                                </div>
+                                <div class="album album7">
+                                	<img src="img/pen.jpg"/>
+                                	<img src="img/pen.jpg"/>
+                                	<img src="img/pen.jpg"/>
+                                	<img src="img/pen.jpg"/>
+                                	<img src="img/pen.jpg"/>
+                                	<img src="img/pen.jpg"/>
+                                	<img src="img/pen.jpg"/>
+                                </div>
+                                <div class="like-comment">
+                                    <img class="like-btn" src="img/Like-50.png"/><span class="like-num">9</span>
+                                    <img src="img/Comments-50.png"/><span>评论</span>
+                                </div>
+                                <div class="comment-date">
+                                    13小时前
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<footer>
+					以显示全部
+				</footer>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/friend.js" type="text/javascript" charset="utf-8"></script>
+</html>
